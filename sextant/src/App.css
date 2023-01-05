@@ -1,35 +1,9 @@
 .App {
   text-align: center;
+  font-family: Monospace;
 }
 
-.cards_container {
-  padding: 38px 55px;
-  margin: 100px;
-  position: center;
-  background-color: bisque;
-  border: #282c34;
-  border-radius: 15px;
-  box-shadow: inset;
-  width: 50vh;
-  /* height: 15vh; */
-}
 @media (prefers-reduced-motion: no-preference) {
-  
-}
-
-.banner {
-  background-color: #282c34;
-  min-height: 20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(20px + 5vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {

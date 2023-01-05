@@ -1,33 +1,20 @@
+import React, { Component } from 'react';
 import './App.css';
+import Banner from './banner';
+import Exhibit from './exhibit';
 
-function Card(props) {
-  return (
-    <div className={'Card Card-' + props.color}>
-      <h1 classname="title">
-        {props.title}
-      </h1>
-      <p classname="content">
-        {props.content}
-      </p>
-    </div>
-  )
-}
-
-function App() {
-  return (
-    <div className="App">
-      <div className="banner">
-        Sextant
-      </div>
-      <div className="cards_container">
-        <Card color="blue"
-          title="Card #1"
-          content="Information about Card#1 will be displayed here."
-        >
-        </Card>
-      </div>
-    </div>
-  );
+class App extends Component {
+    render() {
+        return (
+            <div className="App">
+                <Banner bannerText="Sextant" />
+                <Exhibit name="Exhibit #1"></Exhibit>
+                <Exhibit name="Exhibit #222"></Exhibit>
+                <Exhibit name="Exhibit #4444"></Exhibit>
+                <Exhibit name="Exhibit #12324324: One more"></Exhibit>
+            </div>
+        );
+    }
 }
 
 export default App;
