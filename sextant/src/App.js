@@ -11,11 +11,11 @@ class App extends Component {
     return (
       <div className="App">
         <Banner bannerText="Sextant" />
-        <Exhibit name="Exhibit #1" version="ipv4">
-          {/* <IPAddress ipVersion="ipv4" /> */}
+        <Exhibit name="Public IPv4 Address">
+          <IPAddress ipVersion="ipv4" />
         </Exhibit>
-        <Exhibit name="Exhibit #2" version="ipv6">
-          {/* <IPAddress ipVersion="ipv6" /> */}
+        <Exhibit name="Public IPv6 Address">
+          <IPAddress ipVersion="ipv6" />
         </Exhibit>
       </div>
     );

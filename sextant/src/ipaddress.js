@@ -1,20 +1,30 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { Component } from "react";
 
-import "./ipaddress.css";
+let url = "https://api.ipify.org?format=json";
 
 class IPAddress extends Component {
-  render() {
-    let url = "https://api.ipify.org?format=json";
+  constructor(props) {
+    super(props);
     if (this.props.ipVersion === "ipv6") {
-      url = "https://api6.ipify.org?format=json";
-    }
-    return fetch(url)
-      .then((response) => {
-        <h3>{response.data.ip}</h3>;
-      })
+      url = "https://api64.ipify.org?format=json";
+    };
+
+    this.state = {
+      url: url,
+      ipAddress: null,
+    };
+  }
+
+  render() {
+    fetch(this.state.url)
+      .then((response) => response.json())
+      .then((data) => this.setState({ ipAddress: data.ip })
       .catch((error) => {
         console.error(error);
-      });
+      })
+      );
+
+    return <div className="ipAddress_display">{this.state.ipAddress}</div>;
   }
 }
 
