@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './exhibit.css';
+import IPAddress from "./ipaddress";
+
 
 class Exhibit extends Component {
     render() {
@@ -7,7 +9,9 @@ class Exhibit extends Component {
             <div className="Exhibit">
                 <h2 className="ExhibitHeading">{this.props.name}</h2>
                 <div className="ExhibitContent">
-                    {this.props.children}
+                    {/* {this.props.children} */}
+                    <IPAddress ipVersion={this.props.version} />
+                    
                 </div>
             </div>
         );
