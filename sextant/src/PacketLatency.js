@@ -25,7 +25,7 @@ const PacketLatency = () => {
   return (
       <div>
           {packetLatency !== null ? (
-              <p>Packet Latency: {packetLatency}ms</p>
+              <p>{packetLatency}ms</p>
           ) : (
               <p>Loading...</p>
           )}
