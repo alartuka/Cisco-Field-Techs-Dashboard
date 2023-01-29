@@ -3,6 +3,7 @@ import "./App.css";
 import Banner from "./banner";
 import Exhibit from "./exhibit";
 import IPAddress from "./ipaddress";
+import PacketLatency from "./PacketLatency";
 
 
 
@@ -16,6 +17,9 @@ class App extends Component {
         </Exhibit>
         <Exhibit name="Public IPv6 Address">
           <IPAddress ipVersion="ipv6" />
+        </Exhibit>
+        <Exhibit name="Packet Latency">
+          <PacketLatency />
         </Exhibit>
       </div>
     );
