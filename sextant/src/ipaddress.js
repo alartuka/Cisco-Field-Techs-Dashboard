@@ -22,9 +22,13 @@ class IPAddress extends Component {
       .catch((error) => {
         console.error(error);
       })
-      );
+      ); for all
 
-    return <div className="ipAddress_display">{this.state.ipAddress}</div>;
+    return (
+      <div className="ipAddress_display">
+        {this.state.ipAddress}
+      </div>
+      )
   }
 }
 

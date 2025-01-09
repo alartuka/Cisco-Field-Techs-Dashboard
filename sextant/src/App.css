@@ -3,6 +3,13 @@
   font-family: Monospace;
 }
 
+.Exhibits {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+}
+
 @media (prefers-reduced-motion: no-preference) {
 }
 

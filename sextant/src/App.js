@@ -12,15 +12,17 @@ class App extends Component {
     return (
       <div className="App">
         <Banner bannerText="Sextant" />
-        <Exhibit name="Public IPv4 Address">
-          <IPAddress ipVersion="ipv4" />
-        </Exhibit>
-        <Exhibit name="Public IPv6 Address">
-          <IPAddress ipVersion="ipv6" />
-        </Exhibit>
-        <Exhibit name="Packet Latency">
-          <PacketLatency />
-        </Exhibit>
+        <div className="Exhibits">
+          <Exhibit name="Public IPv4 Address">
+            <IPAddress ipVersion="ipv4" />
+          </Exhibit>
+          <Exhibit name="Public IPv6 Address">
+            <IPAddress ipVersion="ipv6" />
+          </Exhibit>
+          <Exhibit name="Packet Latency">
+            <PacketLatency />
+          </Exhibit>
+        </div>
       </div>
     );
   }
